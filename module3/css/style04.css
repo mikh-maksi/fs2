@@ -1,0 +1,46 @@
+div p a{color:red;}
+
+div > a {font-size:34px;
+}
+
+p{
+    color:blue;
+}
+
+p + h1{
+    color:green;
+}
+
+h1 + p {
+    color: green;
+    font-size: 20px;
+  }
+
+a[href="http://google.com"] {
+    color: #CA3C25;
+  }
+
+.hvr:hover{
+    text-decoration: none;
+}
+h3:hover{
+    border:3px solid black;
+}
+h3:active{
+    border:3px solid red; 
+}
+
+h3{
+    border:1px solid transparent;
+}
+section h3{
+    display: inline-block;
+}
+
+img + p{
+    font-style: italic;
+    color:red;
+}
+p + img{
+    border:3px solid green;
+}
