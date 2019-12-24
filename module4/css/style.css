@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width:1120px;
+    margin:0 auto;
+}
+/*header*/
+nav ul li{
+    float:left;
+    list-style: none;
+}
+.logo{
+    float:left;
+}
+.logo::first-letter{
+    color:red;
+    text-transform: capitalize;
+}
+nav{
+    float:right;
+}
+ header::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
+.clearfix { clear: both; }
+
+/*header*/
+
+/*Main*/
+
+.h2_1{
+    position: relative;
+    font-family: "Roboto black", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #515151;
+    text-align: center;
+    letter-spacing: -0.1em;
+    margin-bottom:40px;
+}
+.h2_1::after{
+    content: "";
+    position: absolute;
+    top: 67px;
+    right: calc(50% - 105px);
+    height: 7px;
+    width: 210px;
+    background-color: #4ec6ab;
+}
+
+
+.item-block:hover  .img::before{
+    background-color: #7777aa;
+}
+
+.item-block:hover  .img, .item-block:hover  .name-item, .item-block:hover  .price-item{
+    background: green;
+}
+
+.item-block {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    max-width: 255px;
+  }
+
+  .item-block:hover .img::before {
+    background-color: gray;
+  }
+
+  .name-item {
+    padding: 14px;
+  }
+  
+  .price-item {
+    text-align: center;
+    padding: 14px 0;
+  }
+  .img {
+    width: 255px;
+    height: 281px;
+    position: relative;
+  }
+  
+  .img::before {
+    content: "";
+    position: absolute;
+    background-color:lightblue;
+    width: 100%;
+    height: 281px;
+    z-index: -1;
+  }
+  
+  .name-item {
+    display: inline-block;
+    width: 172px;
+    background-color: #323232;
+  }
+  .price-item {
+    display: inline-block;
+    margin-left:-4px;
+    width: 55px;
+    background: #8c8c8c;
+  }
+  
+  main::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
+/*Main*/
+/*Footer*/
+.parent{
+    width: 100px;
+    
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background: gray;
+    border: 1px solid black;
+}
+  .child:hover{
+    background: red;
+  }
+.parent:hover .child1{
+    background: blue;
+
+}
+.parent:hover .child2{
+    background: lightblue;
+
+}
+.parent:hover .child3{
+    background: lightgreen;
+
+}
+
+.quote::before{
+    content: '-->';
+    font-size:30px;
+}
+
+.quote::after{
+    content: '\"';
+}
